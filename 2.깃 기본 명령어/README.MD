@@ -36,3 +36,6 @@ git commit --amend --no-edit - 에디터를 띄우지 않고 커밋 메세지를
 git commit --amend --author "username 이메일" - 커밋 저자 정보 수정
 
 origin - 특정 원격 저장소를 식별하는 이름이다. 이 말은 새로운 이름으로 또 다른 원격 저장소를 등록해서 사용할 수 있다는 의미이다. 즉 지역 저장소에서 여러 원격 저장소를 등록하고 사용할 수 있다.
+git remote add origin2 주소
+
+git clone 원격 저장소 주소 새로운 저장소 이름
