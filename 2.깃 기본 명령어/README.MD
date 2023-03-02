@@ -39,3 +39,20 @@ origin - 특정 원격 저장소를 식별하는 이름이다. 이 말은 새로
 git remote add origin2 주소
 
 git clone 원격 저장소 주소 새로운 저장소 이름
+
+git remote update - 지역 저장소에 등록한 원격 저장소의 최신 정보를 가져온다.
+git branch -a - 지역 저장소와 원격 저장소의 브랜치 정보를 함께 보여준다.
+git branch -d - 브랜치 삭제
+git branch -l - 지역 저장소의 브랜치 정보를 보여준다
+git branch -r - 원격 저장소의 브랜치 정보를 보여준다
+git branch -v - 지역 저장소의 브랜치 정보를 최신 커밋 내역과 함께 보여준다.
+
+
+git checkout -t origin/test/remote-branch - 브랜치 설정 변경
+git checkout -b <브랜치명> - 브랜치를 생성하고 사용할 브랜치로 지정한다
+
+git push origin --delete test/local-branch - 원격 저장소 브랜치 삭제하기
+git branch -d test/delete2 - 지역 저장소 브랜치 삭제하기
+
+git pull, git fetch
+git pull은 원격 저장소의 벼경 내역을 가져와서 지역 저장소의 작업 브랜치에 병합까지 완료한다. 반면 git fetch는 원격 저장소의 변경 내역을 가져올 뿐 지역 저장소의 작업 브랜치에 병합 작업은 하지 않느다. 즉 git fetch 후 직접 git merge를 수행해 현재 작업 브랜치에 반영해야 한다.
