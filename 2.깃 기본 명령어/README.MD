@@ -7,7 +7,7 @@ git config user.emial "이메일 주소"
 
 모든 프로젝트에 적용 될 사용자 정보 등록하기
 git config --global user.name "사용자 이름"
-git config --global user.emial "이메일 주소"
+git config --global user.email "이메일 주소"
 
 cat .git/gitconfig - 깃 설정 파일 확인하기
 
